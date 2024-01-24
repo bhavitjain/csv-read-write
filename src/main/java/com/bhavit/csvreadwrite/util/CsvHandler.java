@@ -12,10 +12,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
+ *
  * class that reads records from CSV file. and save to another CSV file.
  */
 public class CsvHandler {
-
+    // dummy commit
+    
     private static final Logger log = LoggerFactory.getLogger(CsvHandler.class);
 
     private CsvHandler(){}
@@ -50,6 +52,7 @@ public class CsvHandler {
     }
 
     /**
+     *
      * creates a new output file
      * @param outputFilePath output file path
      * @return output file
