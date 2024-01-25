@@ -15,9 +15,7 @@ import java.io.IOException;
  *
  * class that reads records from CSV file. and save to another CSV file.
  */
-public class CsvHandler {
-    // dummy commit
-    
+public class CsvHandler {    
     private static final Logger log = LoggerFactory.getLogger(CsvHandler.class);
 
     private CsvHandler(){}
@@ -29,6 +27,8 @@ public class CsvHandler {
 
         String inputFilePath = Constants.INPUT_FILE_PATH;
         String outputFilePath = Constants.OUTPUT_FILE_PATH;
+
+        System.out.println("inputFilePath");
 
         try {
             File outputFile = createOutputFile(outputFilePath);
