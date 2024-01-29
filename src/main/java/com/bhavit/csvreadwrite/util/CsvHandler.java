@@ -1,8 +1,7 @@
 package com.bhavit.csvreadwrite.util;
 
 import com.bhavit.csvreadwrite.constant.Constants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -15,8 +14,8 @@ import java.io.IOException;
  *
  * class that reads records from CSV file. and save to another CSV file.
  */
+@Slf4j
 public class CsvHandler {    
-    private static final Logger log = LoggerFactory.getLogger(CsvHandler.class);
     private CsvHandler(){}
 
     /**
@@ -26,8 +25,6 @@ public class CsvHandler {
 
         String inputFilePath = Constants.INPUT_FILE_PATH;
         String outputFilePath = Constants.OUTPUT_FILE_PATH;
-
-        System.out.println("inputFilePath");
 
         try {
             File outputFile = createOutputFile(outputFilePath);
