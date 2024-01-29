@@ -17,7 +17,6 @@ import java.io.IOException;
  */
 public class CsvHandler {    
     private static final Logger log = LoggerFactory.getLogger(CsvHandler.class);
-
     private CsvHandler(){}
 
     /**
